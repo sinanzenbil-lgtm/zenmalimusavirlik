@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Online İşlemler | Zen Mali Müşavirlik</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-top">
+        <div class="logo">
+          <span class="logo-badge">ZM</span>
+          Zen Mali Müşavirlik
+        </div>
+        <div class="header-actions">
+          <a class="header-chip" href="online-islemler.html">Kurumsal Üye Girişi</a>
+          <a class="header-chip" href="online-islemler.html">Bireysel Üye Girişi</a>
+          <a class="header-chip header-chip-primary" href="online-islemler.html">Üye Ol</a>
+          <span class="header-lang">TR</span>
+        </div>
+      </div>
+      <div class="header-nav">
+        <div class="container nav-bar">
+          <div class="nav-menu">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="services.html">Hizmetler</a>
+            <a href="kadromuz.html">Kadromuz</a>
+            <a href="index.html#guven-endeksi">Güven Endeksi</a>
+            <a href="index.html#iletisim">İletişim</a>
+          </div>
+          <div class="nav-actions">
+            <a class="nav-pill" href="online-islemler.html">Online İşlemler</a>
+            <button class="nav-search" type="button" aria-label="Ara">🔍</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <div class="badge">Online İşlemler</div>
+        <h1 class="section-title">Üye ol veya üye girişi yap</h1>
+        <p>
+          Online işlemler menüsünde üyelik oluşturabilir veya giriş yapabilirsiniz.
+          Kayıtlar güvenli şekilde saklanır ve yetkili ekranından görüntülenebilir.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid">
+        <div class="form-card">
+          <div class="tabs">
+            <button class="tab-button active" type="button" data-tab="login">Üye Girişi</button>
+            <button class="tab-button" type="button" data-tab="register">Üye Ol</button>
+          </div>
+
+          <div id="login-tab">
+            <form id="login-form">
+              <div>
+                <label for="login-email">E-posta</label>
+                <input id="login-email" name="email" type="email" required />
+              </div>
+              <div>
+                <label for="login-phone">Telefon</label>
+                <input id="login-phone" name="phone" type="tel" required />
+              </div>
+              <button class="cta-button" type="submit">Giriş Yap</button>
+            </form>
+            <p class="notice">
+              Bu alan demo giriş ekranıdır. Giriş için kayıtlı e-posta ve telefon
+              bilgisi kullanılır.
+            </p>
+          </div>
+
+          <div id="register-tab" class="hidden">
+            <form id="register-form">
+              <div>
+                <label for="first-name">İsim</label>
+                <input id="first-name" name="firstName" type="text" required />
+              </div>
+              <div>
+                <label for="last-name">Soyisim</label>
+                <input id="last-name" name="lastName" type="text" required />
+              </div>
+              <div>
+                <label for="has-company">Şirketiniz var mı?</label>
+                <select id="has-company" name="hasCompany">
+                  <option value="no">Hayır</option>
+                  <option value="yes">Evet</option>
+                </select>
+              </div>
+              <div id="tax-number-field" class="hidden">
+                <label for="tax-number">Vergi Kimlik Numarası</label>
+                <input id="tax-number" name="taxNumber" type="text" />
+              </div>
+              <div>
+                <label for="email">E-posta</label>
+                <input id="email" name="email" type="email" required />
+              </div>
+              <div>
+                <label for="phone">Telefon</label>
+                <input id="phone" name="phone" type="tel" required />
+              </div>
+              <button class="cta-button" type="submit">Üye Ol</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Üyelik verileri</h3>
+          <p>
+            Üye kayıtları güvenli şekilde saklanır ve yetkili ekranından görüntülenir.
+            Kayıt ekranını geliştirmek için burayı başlangıç olarak tasarladık.
+          </p>
+          <p>
+            <a class="cta-button" href="uye-kayitlari.html">Kayıtları Gör</a>
+          </p>
+          <div class="pill-list">
+            <span class="pill">Gizlilik Odaklı</span>
+            <span class="pill">Şifreli Depolama</span>
+            <span class="pill">Yetkili Erişim</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 Zen Mali Müşavirlik. Tüm hakları saklıdır.</p>
+        <p>Telefon: 0 545 774 28 61 / 0 554 252 44 65</p>
+        <p>E-posta: info@zenmalimüşavirlik.com.tr</p>
+        <p>Adres: Ondokuzmayıs Mahallesi İnönü Caddesi No:81 Kat Altı Daire:26, Kadıköy / İstanbul</p>
+      </div>
+    </footer>
+
+    <script src="online.js"></script>
+  </body>
+</html>
